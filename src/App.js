@@ -3,7 +3,7 @@ import TaskAdd from "./TaskAdd";
 import TaskDisplay from "./TaskDisplay";
 import firebase from "./firebase";
 import Login from "./Login";
-//확인을 위한 주석 추가
+//수정
 class App extends Component {
   constructor(props) {
     super(props);
