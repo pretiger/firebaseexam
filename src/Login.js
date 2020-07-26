@@ -19,6 +19,11 @@ class Login extends Component {
       .then((res) => {
         console.log(res);
         this.props.login();
+      })
+      .catch((err) => {
+        console.log(err);
+        alert("Username or Password Missmatch!!!!!!");
+        window.location.href = "http://localhost:3000/";
       });
   };
 
