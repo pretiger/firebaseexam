@@ -3,6 +3,7 @@ import TaskAdd from "./TaskAdd";
 import TaskDisplay from "./TaskDisplay";
 import firebase from "./firebase";
 import Login from "./Login";
+import AppShell from "./AppShell";
 //수정
 class App extends Component {
   constructor(props) {
@@ -72,6 +73,7 @@ class App extends Component {
       <div>
         {this.state.login ? (
           <div>
+            <AppShell />
             <TaskAdd
               data={this.state.data}
               changeHandler={this.changeHandler}
